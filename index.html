@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kei Pastelería y Café — Pastelería sin gluten en Rancagua</title>
+<meta name="description" content="Kei Pastelería y Café, Pintor Gustavo Cabello Olguín 780, Rancagua. Pastelería sin gluten, sin azúcar, vegana y sin lactosa, con café en grano. 4,9 ★ con 36 reseñas en Google.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#D9C55E">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D9C55E'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%233B2A22'%3EK%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Kei Pastelería y Café">
+<meta property="og:title" content="Kei Pastelería y Café — sin gluten, sin azúcar, en Rancagua">
+<meta property="og:description" content="Pastelería sin gluten e inclusiva: opciones veganas, sin lactosa y sin azúcar. 4,9 ★ con 36 reseñas.">
+<meta property="og:url" content="https://mmedinacode.github.io/Kei-Pasteleria-Web/">
+<meta property="og:image" content="https://mmedinacode.github.io/Kei-Pasteleria-Web/fotos/hero-torta-cafe.jpg">
+<meta property="og:image:alt" content="Porción de torta y capuchino en Kei Pastelería y Café, Rancagua">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lexend:wght@300;400;500;600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-k" aria-hidden="true">K</div>
+  <p class="loader-txt">Pastelería sin gluten</p>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#inicio" data-tab="inicio" aria-label="Kei Pastelería y Café, ir al inicio">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span class="brand-txt"><strong>Kei</strong><em>Pastelería y Café · Rancagua</em></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#inicio"    data-tab="inicio" class="on">Inicio</a></li>
+        <li><a href="#nosotros"  data-tab="nosotros">Nosotros</a></li>
+        <li><a href="#carta"     data-tab="carta">Carta</a></li>
+        <li><a href="#resenas"   data-tab="resenas">Reseñas</a></li>
+        <li><a href="#redes"     data-tab="redes">Redes</a></li>
+        <li><a href="#visitanos" data-tab="visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ INICIO ══════════════ -->
+<section class="tab-panel on" data-tab-panel="inicio" id="inicio">
+  <div class="hero">
+    <div class="hero-txt">
+      <p class="eyebrow">Pintor Gustavo Cabello Olguín 780 · Rancagua</p>
+      <h1>Torta de verdad,<br><em>sin gluten.</em></h1>
+      <p class="hero-lead">
+        Pastelería <strong>sin gluten, sin azúcar, sin lactosa y vegana</strong>,
+        hecha para que nadie se quede mirando la vitrina. Con café en grano.
+      </p>
+
+      <!-- Estas cuatro etiquetas son la propuesta entera del local, y salen
+           de su propia bio y de sus reseñas. -->
+      <ul class="sellos" aria-label="Opciones que ofrecen">
+        <li>Sin gluten</li>
+        <li>Sin azúcar</li>
+        <li>Sin lactosa</li>
+        <li>Vegana</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#carta" data-tab="carta">Ver la carta</a>
+        <a class="btn btn-ghost" href="#resenas" data-tab="resenas">Leer las reseñas</a>
+      </div>
+      <p class="hero-open">
+        <span class="dot" id="statusDot" aria-hidden="true"></span>
+        <span data-horario-estado>Lunes a miércoles desde las 14:30 · jueves y viernes desde las 09:30</span>
+      </p>
+    </div>
+    <figure class="hero-img">
+      <img src="fotos/hero-torta-cafe.jpg" alt="Porción de torta junto a un capuchino en Kei Pastelería y Café" fetchpriority="high" decoding="async">
+      <figcaption class="hero-cap">Torta y café, en Pintor Gustavo Cabello Olguín</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="cifras reveal stagger">
+      <div><b data-contar>4,9</b><span>★ en Google</span></div>
+      <div><b data-contar>36</b><span>reseñas</span></div>
+      <div><b data-contar>7.605</b><span>en Instagram</span></div>
+      <div><b>0</b><span>gluten</span></div>
+    </div>
+
+    <div class="tri reveal stagger">
+      <article class="tri-card">
+        <h3>Para quien no puede comer de todo</h3>
+        <p>“Soy intolerante severa a la lactosa y también al gluten (…) se
+           agradece encontrar productos buenos con las restricciones que
+           tengo.”</p>
+        <a href="#resenas" data-tab="resenas" class="lnk">Leer la reseña completa →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Tortas por porción y por encargo</h3>
+        <p>Maracuyá, puro chocolate, tiramisú, cheesecake, milhojas. La
+           vitrina va cambiando y las tortas grandes se agendan.</p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver la carta →</a>
+      </article>
+      <article class="tri-card">
+        <h3>También hay salado</h3>
+        <p>Sándwiches y pan sin gluten — “grande, fuerte y con un buen
+           precio”, según una clienta que vino desde Valparaíso.</p>
+        <a href="#nosotros" data-tab="nosotros" class="lnk">Conocer el local →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOSOTROS ══════════════ -->
+<section class="tab-panel" data-tab-panel="nosotros" id="nosotros">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Pastelería<br>inclusiva</h2>
+      <p class="sec-lead">
+        Es la palabra que usan ellos mismos en su Instagram: <em>“¿Tienes
+        alguna restricción? ¡Este es tu lugar!”</em>
+      </p>
+    </header>
+
+    <div class="split reveal">
+      <figure class="split-img">
+        <img src="fotos/vitrina.jpg" alt="Vitrina refrigerada llena de tortas por porción en Kei" loading="lazy" decoding="async">
+        <figcaption>La vitrina, toda sin gluten</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Una vitrina entera que sí puedes comer</h3>
+        <p>
+          La gracia de Kei no es tener “una opción sin gluten”: es que
+          <strong>todo lo de la vitrina lo es</strong>. Y hay además
+          alternativas sin azúcar, sin lactosa y veganas.
+        </p>
+        <blockquote class="cita">
+          “La mejor panadería sin gluten que he conocido. Es muy lindo tener
+          opciones que no son dulces, y todo es muy delicioso. (…) Lo único
+          problema es que vivo en Valparaíso 😓 espero volver”
+          <cite>Tessa Forde, en Google</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="split split-rev reveal">
+      <figure class="split-img">
+        <img src="fotos/salon.jpg" alt="Salón de Kei con paredes amarillas y vitrina al fondo" loading="lazy" decoding="async">
+        <figcaption>El salón, de paredes amarillas</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Un local para quedarse</h3>
+        <p>
+          Paredes amarillas, mesas de madera y platos de cerámica verde
+          menta. Una reseña suma dos datos que no están en ninguna otra
+          parte: el local es <strong>climatizado</strong> y
+          <strong>tiene estacionamiento</strong>.
+        </p>
+        <p>
+          Y otra lo resume así: <em>“El ambiente es lo mejor, tranquilo,
+          ideal para conversar y el servicio, amable y cercano.”</em>
+        </p>
+        <a href="#visitanos" data-tab="visitanos" class="lnk">Cómo llegar →</a>
+      </div>
+    </div>
+
+    <div class="gal reveal stagger">
+      <figure><img src="fotos/torta-chocolate.jpg" alt="Porción de torta de chocolate con café" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/torta-merengue.jpg" alt="Torta de merengue decorada con una flor" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/milhojas.jpg" alt="Milhojas servida en plato verde menta" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/tarta.jpg" alt="Tarta de chocolate en plato" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/sandwich-plancha.jpg" alt="Sándwich a la plancha" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/capuchino.jpg" alt="Capuchino con espuma" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/mesa-dos-cafes.jpg" alt="Mesa servida con dos tortas y dos cafés" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/mostrador.jpg" alt="Mostrador y vitrina del local" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/trozo-en-mano.jpg" alt="Porción de torta sostenida en la mano" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+  </div>
+</section>
+
+<!-- ══════════════ CARTA ══════════════ -->
+<section class="tab-panel" data-tab-panel="carta" id="carta">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Carta</p>
+      <h2>Lo que hay<br>en la vitrina</h2>
+      <p class="sec-lead">
+        Todo sin gluten. Las opciones sin azúcar, sin lactosa y veganas
+        conviene confirmarlas en el mostrador según el día.
+      </p>
+    </header>
+
+    <div class="aviso reveal">
+      <strong>Sobre los precios:</strong> el enlace de carta que tienen en
+      Google <b>lleva a un archivo que ya no existe</b>, así que hoy no hay
+      ninguna lista de precios disponible. Los productos de abajo son
+      reales —salen de su ficha, de sus fotos y de sus reseñas— pero van
+      sin valor, en vez de con uno inventado.
+    </div>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Tortas</h3>
+        <span class="carta-bloque-n">6 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/torta-merengue.jpg" alt="Torta de merengue con flor" loading="lazy" decoding="async">
+          <div><h4>Torta de maracuyá</h4><p>Uno de los tres destacados de su carta en Google.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/torta-chocolate.jpg" alt="Porción de torta de chocolate" loading="lazy" decoding="async">
+          <div><h4>Torta puro chocolate</h4><p>“Es EXQUISITA”, según la reseña de Tamara Zamorano.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/tarta.jpg" alt="Tarta de chocolate" loading="lazy" decoding="async">
+          <div><h4>Cheesecake</h4><p>Nombrado en varias reseñas: “muy bien logrado”.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Torta de tiramisú</h4><p>Se agenda por encargo, según una clienta que la pidió varias veces.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/milhojas.jpg" alt="Milhojas en plato verde menta" loading="lazy" decoding="async">
+          <div><h4>Milhojas</h4><p>Vista en sus propias fotos.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/vitrina.jpg" alt="Vitrina con variedad de tortas" loading="lazy" decoding="async">
+          <div><h4>Lo que haya en vitrina</h4><p>La variedad cambia según el día: conviene preguntar.</p></div>
+          <span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Salado</h3>
+        <span class="carta-bloque-n">3 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/sandwich-capuchino.jpg" alt="Sándwich servido junto a un capuchino" loading="lazy" decoding="async">
+          <div><h4>Sándwich aceituna y queso</h4><p>El tercer destacado de su carta en Google.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/sandwich-plancha.jpg" alt="Sándwich a la plancha" loading="lazy" decoding="async">
+          <div><h4>Sándwiches a la plancha</h4><p>Vistos en sus propias fotos.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Pan sin gluten</h4><p>“Grande, fuerte y con un buen precio”, dice Tessa Forde.</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Café e infusiones</h3>
+        <span class="carta-bloque-n">4 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Chai Latte</h4><p>Uno de los tres destacados de su carta en Google.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/capuchino.jpg" alt="Capuchino con espuma" loading="lazy" decoding="async">
+          <div><h4>Capuchino</h4><p>Su bio de Instagram parte diciendo “café en grano”.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Café en grano</h4><p>De su propia bio de Instagram.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Infusiones</h4><p>Aparecen entre los temas que Google extrae de sus reseñas.</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <p class="note">
+      Productos confirmados en su ficha de Google, sus fotos y sus reseñas.
+      Conviene confirmar precios y disponibilidad en el local.
+    </p>
+    <!--
+      ⚠️ PLACEHOLDER MARCADO — NINGÚN PRECIO CONSTA.
+      El enlace "Carta" de su ficha de Google apunta a
+      cdn.me-qr.com/pdf/12702384.pdf, que devuelve 404 (probado el
+      15-09-2026 con dos user-agents). No hay ninguna otra lista publicada.
+      Todo va "Consultar" a propósito. Cuando el local mande su carta,
+      reemplazar — y avisarles que ese enlace está roto.
+    -->
+  </div>
+</section>
+
+<!-- ══════════════ RESEÑAS ══════════════ -->
+<section class="tab-panel" data-tab-panel="resenas" id="resenas">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Reseñas</p>
+      <h2>4,9 ★ · 36 reseñas</h2>
+      <p class="sec-lead">Reales, copiadas tal cual de su ficha de Google Maps.</p>
+    </header>
+
+    <div class="revs reveal stagger">
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Soy intolerante severa a la lactosa y también al gluten, compré porciones de tortas y estaban muy ricas, tienen opciones veganas y sin lactosa. Se agradece encontrar productos buenos con las restricciones que tengo, muchas gracias 😍💯</p>
+        <footer><b>Valeria Elgueta Reyes</b><span>3 reseñas</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>La mejor panadería sin gluten que he conocido. Es muy lindo tener opciones que no son dulces, y todo es muy delicioso. El pan es grande, fuerte y con un buen precio. Lo único problema es que vivo en Valparaíso 😓 espero volver</p>
+        <footer><b>Tessa Forde</b><span>Local Guide · 15 reseñas</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Es una de las mejores pastelerías de Rancagua!! La mejor de la región en cuento a ser cero azúcar y cero gluten! Recomiendo mucho la torta puro chocolate, es EXQUISITA!!</p>
+        <footer><b>Tamara Zamorano</b><span>Local Guide · 57 reseñas · hace 2 meses</span></footer>
+      </blockquote>
+    </div>
+
+    <div class="rev-cta reveal">
+      <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJrWFlFsBDY5YRM-kAKgUoHMs" target="_blank" rel="noopener">Leer las 36 reseñas</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJrWFlFsBDY5YRM-kAKgUoHMs" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REDES ══════════════ -->
+<section class="tab-panel" data-tab-panel="redes" id="redes">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Redes</p>
+      <h2>Dónde encontrarnos</h2>
+      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+    </header>
+
+    <div class="redes">
+      <!-- Instagram verificado el 15-09-2026. Las 3 fotos de la rejilla son
+           REALES del local (de su ficha de Maps), no scrapeadas de
+           Instagram: el pie lo dice. -->
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.instagram.com/kei.pasteleriaycafe/" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-ig"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
+          <span class="red-card-txt">
+            <b>@kei.pasteleriaycafe</b>
+            <em>7.605 seguidores · 59 publicaciones</em>
+          </span>
+          <span class="red-card-cta">Ver perfil →</span>
+        </a>
+        <a class="red-grid" href="https://www.instagram.com/kei.pasteleriaycafe/" target="_blank" rel="noopener"
+           data-cta="Ver en Instagram" aria-label="Abrir el Instagram de Kei Pastelería y Café">
+          <figure><img src="fotos/vitrina.jpg" alt="Vitrina con tortas" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/torta-merengue.jpg" alt="Torta de merengue con flor" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/dos-tortas.jpg" alt="Dos porciones de torta con café" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">Fotos del local publicadas en su ficha de Google.</p>
+      </article>
+
+      <a class="red-card reveal" href="tel:+56994402082">
+        <span class="red-card-head">
+          <span class="red-logo red-logo-tel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
+          <span class="red-card-txt">
+            <b>+56 9 9440 2082</b>
+            <em>Teléfono publicado en Google Maps</em>
+          </span>
+          <span class="red-card-cta">Llamar →</span>
+        </span>
+        <p class="red-pie">Para encargar una torta conviene llamar con tiempo.</p>
+      </a>
+
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.google.com/maps/search/?api=1&query=Kei%20Pasteler%C3%ADa%20y%20Caf%C3%A9&query_place_id=ChIJrWFlFsBDY5YRM-kAKgUoHMs" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C7.31 0 3.5 3.81 3.5 8.5c0 6.38 8.5 15.5 8.5 15.5s8.5-9.12 8.5-15.5C20.5 3.81 16.69 0 12 0zm0 11.6a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2z"/></svg></span>
+          <span class="red-card-txt">
+            <b>Ficha en Google Maps</b>
+            <em>4,9 ★ · 36 reseñas</em>
+          </span>
+          <span class="red-card-cta">Abrir →</span>
+        </a>
+        <a class="red-grid" href="https://www.google.com/maps/search/?api=1&query=Kei%20Pasteler%C3%ADa%20y%20Caf%C3%A9&query_place_id=ChIJrWFlFsBDY5YRM-kAKgUoHMs" target="_blank" rel="noopener"
+           data-cta="Ver la ficha" aria-label="Abrir la ficha de Kei en Google Maps">
+          <figure><img src="fotos/salon.jpg" alt="Salón de paredes amarillas" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/mostrador.jpg" alt="Mostrador y vitrina" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/milhojas.jpg" alt="Milhojas en plato verde menta" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">Ojo: el enlace de carta de su ficha está caído.</p>
+      </article>
+    </div>
+
+    <!--
+      ⚠️ PENDIENTE: TikTok no buscado.
+      ⚠️ Sin delivery: su ficha declara sólo "Consumo en el lugar" y "Para
+      llevar". Por eso no hay botón flotante de delivery a la izquierda.
+    -->
+    <div class="aviso reveal">
+      <strong>Algo que conviene que arreglen:</strong> el botón “Carta” de
+      su ficha de Google apunta a un archivo que ya no existe — hoy devuelve
+      error. Cualquiera que quiera ver qué venden antes de ir, no ve nada.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VISÍTANOS ══════════════ -->
+<section class="tab-panel" data-tab-panel="visitanos" id="visitanos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Pintor Gustavo Cabello Olguín 780</h2>
+    </header>
+
+    <div class="visit reveal">
+      <div class="visit-info">
+        <div class="vblock">
+          <h3>Dirección</h3>
+          <p>C. Pintor Gustavo Cabello Olguín 780<br>Rancagua, Región de O'Higgins</p>
+          <p class="sub">Plus Code V756+VC · con estacionamiento</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Horario</h3>
+          <p class="estado"><span class="dot" aria-hidden="true"></span><span data-horario-estado>Lunes a miércoles desde las 14:30</span></p>
+          <!-- El horario de este local es irregular de verdad: lun-mié abren
+               recién a las 14:30, jue-vie a las 09:30 y sábado a las 10:00.
+               La tabla día por día acá no es decorativa. -->
+          <ul class="horario horario-semana" id="horario-lista" data-horario-semana>
+            <li data-dia="1"><span>Lunes</span><b>14:30 – 20:00</b></li>
+            <li data-dia="2"><span>Martes</span><b>14:30 – 20:00</b></li>
+            <li data-dia="3"><span>Miércoles</span><b>14:30 – 20:00</b></li>
+            <li data-dia="4"><span>Jueves</span><b>09:30 – 20:00</b></li>
+            <li data-dia="5"><span>Viernes</span><b>09:30 – 20:00</b></li>
+            <li data-dia="6"><span>Sábado</span><b>10:00 – 20:00</b></li>
+            <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
+          </ul>
+          <p class="sub">Horario de su ficha de Google Maps, 15-09-2026.</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Teléfono</h3>
+          <a class="vtel" href="tel:+56994402082">
+            <span class="vtel-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
+            <span class="vtel-txt">
+              <b>+56 9 9440 2082</b>
+              <em>Publicado en su ficha de Google</em>
+            </span>
+            <span class="vtel-flecha" aria-hidden="true">→</span>
+          </a>
+          <!-- ⚠️ WhatsApp SIN confirmar: falta probar wa.me/c/56994402082.
+               Mientras no conste, va tel:, nunca wa.me. -->
+        </div>
+
+        <div class="vblock">
+          <h3>Cómo se puede pedir</h3>
+          <ul class="vpedir">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2H3V5zm2 4h14l-1 5h-4v6h-2v-6H6L5 9zm-1 12h16v2H4v-2z"/></svg> Consumo en el lugar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Para llevar</li>
+          </ul>
+          <p class="sub">
+            Servicios declarados en su ficha de Google. Las tortas grandes
+            se encargan con anticipación.
+          </p>
+        </div>
+
+        <div class="vblock vblock-cta">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Kei%20Pasteler%C3%ADa%20y%20Caf%C3%A9%20Rancagua&destination_place_id=ChIJrWFlFsBDY5YRM-kAKgUoHMs" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?ll=-34.1403398,-70.7389636&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+          <a class="btn btn-ghost" href="tel:+56994402082">Llamar</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- ⚠️ SIN loading="lazy": vive en pestaña display:none y no cargaría. -->
+        <iframe
+          title="Mapa de Kei Pastelería y Café en Rancagua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300!2d-70.7389636!3d-34.1403398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966343c0166561ad%3A0xcb1c28052a00e933!2sKei%20Pasteler%C3%ADa%20y%20Caf%C3%A9!5e0!3m2!1ses!2scl!4v1757900000000!5m2!1ses!2scl"
+          width="100%" height="100%" style="border:0" allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Flotantes. Derecha = contacto: Instagram (7.605 seguidores) y teléfono.
+     Izquierda libre para delivery, que NO se pone: su ficha declara sólo
+     consumo en el lugar y para llevar. -->
+<div class="float float-right">
+  <a class="fab fab-ig" href="https://www.instagram.com/kei.pasteleriaycafe/" target="_blank" rel="noopener"
+     data-label="Instagram" aria-label="Instagram de Kei Pastelería y Café"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+  <a class="fab fab-tel" href="tel:+56994402082" data-label="Llamar al local"
+     aria-label="Llamar a Kei Pastelería y Café" style="background:var(--cacao)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></a>
+  <button class="fab fab-top" id="toTop" data-label="Volver arriba" aria-label="Volver arriba"
+    style="background:var(--menta-osc);color:#fff"><span aria-hidden="true">↑</span></button>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">Kei</p>
+      <p>Pintor Gustavo Cabello Olguín 780 · Rancagua</p>
+      <p data-horario-resumen>Lun a Mié 14:30 – 20:00 · Jue y Vie 09:30 – 20:00 · Sáb 10:00 – 20:00</p>
+      <p><a href="tel:+56994402082">+56 9 9440 2082</a></p>
+    </div>
+    <div class="foot-demo">
+      <p><strong>Esta es una demo.</strong> No es el sitio oficial de Kei Pastelería y Café.</p>
+      <p>Hecha con datos públicos reales de su ficha de Google Maps
+         (verificados el 15-09-2026) para mostrarle al local cómo se vería
+         su página web.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.HORARIO = {
+  dias: ["14:30 - 20:00","14:30 - 20:00","14:30 - 20:00","09:30 - 20:00",
+         "09:30 - 20:00","10:00 - 20:00","Cerrado"],
+  fuente: "Google Maps, 15-09-2026"
+};
+/* Instagram VERIFICADO el 15-09-2026: @kei.pasteleriaycafe, 7.605
+   seguidores. Las fotos de la rejilla son reales del local, de su ficha. */
+window.REDES = {
+  instagram: {
+    user: "kei.pasteleriaycafe",
+    seguidores: "7.605",
+    fotos: ["fotos/vitrina.jpg","fotos/torta-merengue.jpg","fotos/dos-tortas.jpg"]
+  }
+};
+</script>
+
+<script src="script.js"></script>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="carrito.js"></script>
+<script src="horario.js"></script>
+<script src="redes.js"></script>
+</body>
+</html>
