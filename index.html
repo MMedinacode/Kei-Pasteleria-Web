@@ -24,6 +24,77 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lexend:wght@300;400;500;600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Kei Pastelería y Café",
+  "description": "Pastelería sin gluten e inclusiva: opciones veganas, sin lactosa y sin azúcar. 4,9 ★ con 36 reseñas.",
+  "image": "https://mmedinacode.github.io/Kei-Pasteleria-Web/fotos/hero-torta-cafe.jpg",
+  "url": "https://mmedinacode.github.io/Kei-Pasteleria-Web/",
+  "telephone": "+56994402082",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "C. Pintor Gustavo Cabello Olguín 780",
+    "addressLocality": "Rancagua",
+    "addressRegion": "Región de O'Higgins",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://www.instagram.com/kei.pasteleriaycafe"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "14:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "14:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "14:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "09:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "09:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "20:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -70,7 +141,7 @@
       </p>
 
       <!-- Estas cuatro etiquetas son la propuesta entera del local, y salen
-           de su propia bio y de sus reseñas. -->
+           de nuestra bio y de nuestras reseñas. -->
       <ul class="sellos" aria-label="Opciones que ofrecen">
         <li>Sin gluten</li>
         <li>Sin azúcar</li>
@@ -190,7 +261,7 @@
       <figure><img src="fotos/mostrador.jpg" alt="Mostrador y vitrina del local" loading="lazy" decoding="async"></figure>
       <figure><img src="fotos/trozo-en-mano.jpg" alt="Porción de torta sostenida en la mano" loading="lazy" decoding="async"></figure>
     </div>
-    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+    
   </div>
 </section>
 
@@ -206,9 +277,7 @@
     </header>
 
     <div class="aviso reveal">
-      <strong>Sobre los precios:</strong> los productos de abajo salen de su
-      ficha de Google, de sus fotos y de sus reseñas. Los precios se
-      consultan en el mostrador.
+      Los precios se consultan en el mostrador.
     </div>
 
     <section class="carta-bloque reveal">
@@ -219,7 +288,7 @@
       <div class="menu reveal stagger">
         <article class="menu-item">
           <img src="fotos/torta-merengue.jpg" alt="Torta de merengue con flor" loading="lazy" decoding="async">
-          <div><h4>Torta de maracuyá</h4><p>Uno de los tres destacados de su carta en Google.</p></div>
+          <div><h4>Torta de maracuyá</h4><p>Uno de los tres destacados de la carta.</p></div>
           <span class="price">Consultar</span></article>
         <article class="menu-item">
           <img src="fotos/torta-chocolate.jpg" alt="Porción de torta de chocolate" loading="lazy" decoding="async">
@@ -232,7 +301,7 @@
         <article class="menu-item"><div><h4>Torta de tiramisú</h4><p>Se agenda por encargo, según una clienta que la pidió varias veces.</p></div><span class="price">Consultar</span></article>
         <article class="menu-item">
           <img src="fotos/milhojas.jpg" alt="Milhojas en plato verde menta" loading="lazy" decoding="async">
-          <div><h4>Milhojas</h4><p>Vista en sus propias fotos.</p></div>
+          <div><h4>Milhojas</h4><p>Vista en nuestras fotos.</p></div>
           <span class="price">Consultar</span></article>
         <article class="menu-item">
           <img src="fotos/vitrina.jpg" alt="Vitrina con variedad de tortas" loading="lazy" decoding="async">
@@ -249,11 +318,11 @@
       <div class="menu reveal stagger">
         <article class="menu-item">
           <img src="fotos/sandwich-capuchino.jpg" alt="Sándwich servido junto a un capuchino" loading="lazy" decoding="async">
-          <div><h4>Sándwich aceituna y queso</h4><p>El tercer destacado de su carta en Google.</p></div>
+          <div><h4>Sándwich aceituna y queso</h4></div>
           <span class="price">Consultar</span></article>
         <article class="menu-item">
           <img src="fotos/sandwich-plancha.jpg" alt="Sándwich a la plancha" loading="lazy" decoding="async">
-          <div><h4>Sándwiches a la plancha</h4><p>Vistos en sus propias fotos.</p></div>
+          <div><h4>Sándwiches a la plancha</h4></div>
           <span class="price">Consultar</span></article>
         <article class="menu-item"><div><h4>Pan sin gluten</h4><p>“Grande, fuerte y con un buen precio”, dice Tessa Forde.</p></div><span class="price">Consultar</span></article>
       </div>
@@ -265,20 +334,16 @@
         <span class="carta-bloque-n">4 opciones</span>
       </header>
       <div class="menu reveal stagger">
-        <article class="menu-item"><div><h4>Chai Latte</h4><p>Uno de los tres destacados de su carta en Google.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Chai Latte</h4><p>Uno de los tres destacados de la carta.</p></div><span class="price">Consultar</span></article>
         <article class="menu-item">
           <img src="fotos/capuchino.jpg" alt="Capuchino con espuma" loading="lazy" decoding="async">
           <div><h4>Capuchino</h4><p>Su bio de Instagram parte diciendo “café en grano”.</p></div>
           <span class="price">Consultar</span></article>
-        <article class="menu-item"><div><h4>Café en grano</h4><p>De su propia bio de Instagram.</p></div><span class="price">Consultar</span></article>
-        <article class="menu-item"><div><h4>Infusiones</h4><p>Aparecen entre los temas que Google extrae de sus reseñas.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Café en grano</h4><p></p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Infusiones</h4><p>De lo que más se repite en nuestras reseñas.</p></div><span class="price">Consultar</span></article>
       </div>
     </section>
 
-    <p class="note">
-      Productos confirmados en su ficha de Google, sus fotos y sus reseñas.
-     
-    </p>
     <!--
       ⚠️ PLACEHOLDER MARCADO — NINGÚN PRECIO CONSTA.
       El enlace "Carta" de su ficha de Google apunta a
@@ -296,7 +361,7 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Reseñas</p>
       <h2>4,9 ★ · 36 reseñas</h2>
-      <p class="sec-lead">Reales, copiadas tal cual de su ficha de Google Maps.</p>
+      <p class="sec-lead">Lo que dicen nuestros clientes en Google.</p>
     </header>
 
     <div class="revs reveal stagger">
@@ -332,7 +397,7 @@
     <header class="sec-head reveal">
       <p class="eyebrow">Redes</p>
       <h2>Dónde encontrarnos</h2>
-      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+      <p class="sec-lead">Todos nuestros canales, en un solo lugar.</p>
     </header>
 
     <div class="redes">
@@ -354,7 +419,7 @@
           <figure><img src="fotos/torta-merengue.jpg" alt="Torta de merengue con flor" loading="lazy" decoding="async"></figure>
           <figure><img src="fotos/dos-tortas.jpg" alt="Dos porciones de torta con café" loading="lazy" decoding="async"></figure>
         </a>
-        <p class="red-pie">Fotos del local publicadas en su ficha de Google.</p>
+        
       </article>
 
       <a class="red-card reveal" href="tel:+56994402082">
@@ -362,7 +427,7 @@
           <span class="red-logo red-logo-tel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
           <span class="red-card-txt">
             <b>+56 9 9440 2082</b>
-            <em>Teléfono publicado en Google Maps</em>
+            <em>Nuestro teléfono</em>
           </span>
           <span class="red-card-cta">Llamar →</span>
         </span>
@@ -428,7 +493,7 @@
             <li data-dia="6"><span>Sábado</span><b>10:00 – 20:00</b></li>
             <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
           </ul>
-          <p class="sub">Horario de su ficha de Google Maps, 15-09-2026.</p>
+          
         </div>
 
         <div class="vblock">
@@ -437,7 +502,7 @@
             <span class="vtel-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
             <span class="vtel-txt">
               <b>+56 9 9440 2082</b>
-              <em>Publicado en su ficha de Google</em>
+              
             </span>
             <span class="vtel-flecha" aria-hidden="true">→</span>
           </a>
@@ -451,10 +516,7 @@
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2H3V5zm2 4h14l-1 5h-4v6h-2v-6H6L5 9zm-1 12h16v2H4v-2z"/></svg> Consumo en el lugar</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Para llevar</li>
           </ul>
-          <p class="sub">
-            Servicios declarados en su ficha de Google. Las tortas grandes
-            se encargan con anticipación.
-          </p>
+          <p class="sub">Las tortas grandes se encargan con anticipación.</p>
         </div>
 
         <div class="vblock vblock-cta">
@@ -531,5 +593,6 @@ window.REDES = {
 <script src="horario.js"></script>
 <script src="redes.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
