@@ -622,3 +622,10 @@ h1,h2,h3,h4{
   .carta-bloque-head{ flex-direction:column; align-items:flex-start; gap:4px; }
   .carta-bloque-n{ text-align:left; }
 }
+/* WhatsApp confirmado (02-10-2026) y nota de las tortas familiares */
+.red-logo-wa{background:#25D366}
+.red-logo-wa svg{fill:#fff}
+.fab-wa{background:#25D366;color:#fff}
+.fab-wa svg{fill:currentColor}
+.carta-nota{margin:0 0 14px;font-size:14px;line-height:1.5;color:var(--c-suave)}
+.carta-nota-pie{margin:12px 0 0;font-size:13px}
